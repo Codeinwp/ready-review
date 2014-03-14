@@ -49,7 +49,7 @@
 				 $orderby = cwp('orderby');
 				 $ordertype = cwp('ordertype');
 				 if ($orderby =='meta_value'){
-					$orderby = 'meta_key=affiliate_rank';
+					$orderby = 'meta_value&meta_key=affiliate_rank';
 				 }
 				 
 				?>
