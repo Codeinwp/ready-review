@@ -305,4 +305,3 @@ function cwp_add_editor_styles() {
     add_editor_style( '/css/custom-editor-style.css' );
 }
 add_action( 'init', 'cwp_add_editor_styles' );function cwp_filter_wp_title( $title ) {    if(is_home()) {		$filtered_title = get_bloginfo('name') .' - '.__('Home','cwp');	} elseif(is_category()) {		$filtered_title =  __('Browsing the Category ','cwp').' - '.$title;	} elseif(is_archive()){		$filtered_title =  __('Browsing Archives of','cwp').' - '.$title;	} elseif(is_search()) {		$filtered_title = __('Search Results for','cwp').' "'.$s.'"';	} elseif(is_404()) {		$filtered_title = __('404 - Page got lost!','cwp');	} else {		$filtered_title = $title;	}	return $filtered_title;}add_filter( 'wp_title', 'cwp_filter_wp_title' );
-?>
