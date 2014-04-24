@@ -70,16 +70,7 @@ add_action( 'widgets_init', 'cwp_widgets_init' );
 
 	
 ?>
-<?php /////////////// META BOXES ///////////////
-/*
-Plugin Name: Meta Box Example
-Plugin URI: http://wp.tutsplus.com/
-Description: Adds an example meta box to wordpress.
-Version: None
-Author: Christopher Davis
-Author URI: http://wp.tutsplus.com/
-License: Public Domain
-*/
+<?php 
 
 add_action( 'add_meta_boxes', 'cwp_meta_box_add' );
 function cwp_meta_box_add()
@@ -248,11 +239,7 @@ function cwp_required_plugins() {
 			'slug' 		=> 'wp-product-review',
 			'required' 	=> false,
 		),
-		array(
-			'name' 		=> 'SendinBlue SMTP',
-			'slug' 		=> 'mailin',
-			'required' 	=> false,
-		),
+	
 
 	);
 
