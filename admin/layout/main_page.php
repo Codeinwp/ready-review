@@ -10,14 +10,22 @@
 		<div id="header">
 		
 			<div class="logo ">
-				<h2><?php echo cwp_config('admin_page_header'); ?></h2>
+				<h2>
+
+			    <img class="theme_options_logo" src="<?php echo get_stylesheet_directory_uri() . "/admin/layout/img/logo.png"; ?>" alt="<?php echo cwp_config('admin_page_header'); ?>"> 
+				
+				<a href="http://www.readythemes.com/ready-review-tutorials/?r=wporg" class="read_docs button" target="_blank" style="text-decoration: none;"><?php _e("Read online documentation", "cwp"); ?></a>
+				
+				<a href="http://www.readythemes.com/affiliate-review-plus/?r=wporg"  class="read_docs button" target="_blank" style="color:red; text-decoration: none; "><?php _e("Buy PRO Version", "cwp"); ?></a>
+				
+				<a href="http://codecanyon.net/search?utf8=%E2%9C%93&site=codecanyon.net&category=wordpress&term=affiliate&ref=maldinii" target="_blank" class="read_docs button" style="text-decoration: none;"><?php _e("Recommended Plugins", "cwp"); ?></a>
+
+				</h2>
 			</div>
-			<a target="_blank" href="http://www.readythemes.com/ready-review-tutorials/?r=wporg" class="adminLink" >Online Documentation</a>
-			<a target="_blank" href="http://www.readythemes.com/affiliate-review-plus/?r=wporg" class="adminLink cwpred">Buy PRO Version</a>
-			<a target="_blank" href="http://www.readythemes.com/category/blog/?r=wporg" class="adminLink" >WordPress Tips&Tricks</a>
+		  
 			<div class="clear"></div>
 		
-    	</div>
+    		</div>
 
 		<div id="info_bar">
 		 
