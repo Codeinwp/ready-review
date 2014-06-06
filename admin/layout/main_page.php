@@ -18,8 +18,7 @@
 				
 				<a href="http://www.readythemes.com/affiliate-review-plus/?r=wporg"  class="read_docs button" target="_blank" style="color:red; text-decoration: none; "><?php _e("Buy PRO Version", "cwp"); ?></a>
 				
-				<a href="http://codecanyon.net/search?utf8=%E2%9C%93&site=codecanyon.net&category=wordpress&term=affiliate&ref=maldinii" target="_blank" class="read_docs button" style="text-decoration: none;"><?php _e("Recommended Plugins", "cwp"); ?></a>
-
+				
 				</h2>
 			</div>
 		  
