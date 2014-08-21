@@ -244,8 +244,6 @@ function cwp_check_config(){
 	$tab_fields  = array("type","name","options");
 	$titles = array("name","type");
 	$title = array_merge($titles,array("default"));
-	
-	if(!empty($config)) {
 	foreach($config as $k=>$fields){
 					 $keys = array_keys($fields);
 					 $dif = array_diff($tab_fields,$keys);
@@ -299,7 +297,6 @@ function cwp_check_config(){
 					}
 					if(!empty($errors)) break;
 						
-	}
 	}
 	return $errors;
 } 
@@ -385,4 +382,9 @@ function cwp($name = ''){
 		return $op[$name];
 	}
 	return null;
+}
+
+add_action( 'admin_enqueue_scripts', 'cwp_top_custom_wp_admin_script'); 
+function cwp_top_custom_wp_admin_script(){
+	 wp_enqueue_media();
 }
